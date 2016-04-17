@@ -1,0 +1,81 @@
+@font-face {
+  font-family: 'KlavikaMedium-Plain';
+  src: url('KlavikaMedium-Plain.eot');
+  src: url('KlavikaMedium-Plain.woff') format('woff'),
+       url('KlavikaMedium-Plain.ttf') format('truetype'),
+url('KlavikaMedium-Plain.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'ZurichBoldCondensedBT';
+  src: url('ZurichBoldCondensedBT.woff') format('woff'),
+       url('ZurichBoldCondensedBT.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'ZurichBoldCondensedBT';
+  src: url('ZurichBoldCondensedBT.eot');
+  src: url('ZurichBoldCondensedBT.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'ZurichCondensedBT';
+  src: url('ZurichCondensedBT.woff') format('woff'),
+       url('ZurichCondensedBT.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'ZurichCondensedBT';
+  src: url('ZurichCondensedBT.eot');
+  src: url('ZurichCondensedBT.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyriadProSemibold';
+  src: url('MyriadProSemibold.woff') format('woff'),
+       url('MyriadProSemibold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyriadProSemiBold';
+  src: url('MyriadProSemiBold.eot');
+  src: url('MyriadProSemiBold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyriadProRegular';
+  src: url('MyriadProRegular.eot');
+  src: url('MyriadProRegular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MyriadPro-Regular';
+  src: url('MyriadPro-Regular.woff') format('woff'),
+       url('MyriadPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+

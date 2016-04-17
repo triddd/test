@@ -1,0 +1,75 @@
+.header {
+  padding: 15px 0 10px; }
+
+.logo {
+  height: 65px;
+  background: url(../img/bgLogo.png) no-repeat 0 50%;
+  color: #231f20;
+  font: 34px/20px "KlavikaMedium-Plain", sans-serif;
+  text-transform: uppercase;
+  float: left;
+  margin-left: 25px;
+  padding: 17px 0 0 30px; }
+  .logo span {
+    color: #858689;
+    font: 11px "MyriadProRegular", sans-serif;
+    text-shadow: 0.75px 1px rgba(255, 255, 255, 0.78); }
+
+.tel {
+  width: 700px;
+  float: right;
+  text-align: right;
+  font: 12px "MyriadProRegular", sans-serif;
+  color: #585755;
+  margin-bottom: 15px;
+  text-shadow: 0.75px 1px rgba(255, 255, 255, 0.78); }
+  .tel b {
+    font: 20px "MyriadProRegular", sans-serif;
+    color: #373737;
+    text-shadow: none; }
+  .tel::after {
+    content: ' ';
+    display: table;
+    clear: both; }
+
+.siteNav {
+  float: right;
+  margin-bottom: 25px; }
+  .siteNav li {
+    float: left;
+    margin-right: 15px; }
+    .siteNav li:last-child {
+      margin-right: 0; }
+    .siteNav li a {
+      font: 13px "ZurichCondensedBT", sans-serif;
+      color: #209a28;
+      text-transform: uppercase; }
+  .siteNav::after {
+    content: '';
+    display: block;
+    clear: both; }
+
+.mainNav {
+  width: 100%;
+  display: table;
+  background: url(../img/bgMainNav.jpg) repeat-x;
+  box-shadow: inset 1px 1px 1px #81de41;
+  border: 1px solid #0c932f;
+  border-radius: 4px;
+  padding: 10px 0;
+  margin-bottom: 15px; }
+  .mainNav ul {
+    display: table-row; }
+  .mainNav li {
+    display: table-cell;
+    text-align: center; }
+    .mainNav li a {
+      font: 15px "ZurichBoldCondensedBT", sans-serif;
+      color: #fff;
+      text-shadow: 0 -2px rgba(0, 92, 19, 0.63); }
+
+.currentPage {
+  font: 12px/20px Arial, sans-serif;
+  color: #14961c;
+  margin: 0 0 5px 25px;
+  text-shadow: 1px 1px  #fff; }

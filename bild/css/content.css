@@ -1,0 +1,189 @@
+@charset "UTF-8";
+.content {
+  width: 741px;
+  height: 100%;
+  float: left;
+  background: #fff;
+  padding: 18px 18px 0 18px;
+  border: 1px solid #e1dbce;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  margin-bottom: 20px; }
+
+.sliderBlock {
+  position: relative; }
+
+.contentTitle {
+  font: 26px "ZurichCondensedBT", sans-serif;
+  color: #444137;
+  text-transform: uppercase;
+  max-width: 450px;
+  margin-bottom: 15px; }
+
+.contentDesc {
+  font: 12px/20px Arial, sans-serif;
+  color: #595447;
+  max-width: 450px;
+  margin-bottom: 15px; }
+  .contentDesc a {
+    text-decoration: underline;
+    color: #28b028; }
+
+.contentImg {
+  position: absolute;
+  bottom: -15px;
+  right: 45px; }
+
+#slider {
+  height: 265px;
+  margin-bottom: 25px;
+  position: relative; }
+  #slider ul {
+    border-radius: 7px; }
+  #slider img {
+    width: 200%; }
+
+.bjqsDesc {
+  width: 235px;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 16px 16px;
+  z-index: 2; }
+  .bjqsDesc h2 {
+    font: 22px/35px "ZurichCondensedBT", sans-serif;
+    margin-bottom: 10px; }
+    .bjqsDesc h2 em {
+      font: 32px/35px "ZurichCondensedBT", sans-serif;
+      color: #28b028; }
+  .bjqsDesc p {
+    font: 12px/18px Arial, sans-serif; }
+  .bjqsDesc a {
+    font: 12px/18px Arial, sans-serif;
+    color: #28b028; }
+
+/* переопределенные стили слайдера*/
+ol.bjqs-markers {
+  background: rgba(37, 29, 20, 0.9);
+  position: absolute;
+  width: 235px;
+  top: 0;
+  right: 0;
+  height: 100%;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding: 215px 16px 20px; }
+
+ol.bjqs-markers li {
+  margin-right: 10px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #6b685e;
+  text-align: center;
+  box-shadow: inset 0.5px -1px 1px rgba(192, 186, 166, 0.75);
+  vertical-align: middle;
+  line-height: 22px; }
+
+ol.bjqs-markers li a {
+  color: #cbcbcb;
+  font: 12px Arial, sans-serif;
+  display: block;
+  height: 100%;
+  padding-top: 4px; }
+
+ol.bjqs-markers li.active-marker {
+  width: 26px;
+  height: 26px;
+  background: url(../img/bgMainNav.jpg) repeat-x;
+  box-shadow: none;
+  line-height: 26px;
+  padding-top: 2px; }
+
+.tabs {
+  width: 100%; }
+
+.tabs__caption {
+  background: url(../img/bgTab.jpg) repeat-x;
+  border: none;
+  box-shadow: inset 0 -1px 1px #fff;
+  padding: 0;
+  margin-bottom: 25px; }
+  .tabs__caption li {
+    float: left;
+    width: 33.3333%;
+    text-align: center;
+    cursor: pointer;
+    padding: 8px 0;
+    border: 1px solid #cfcdc5;
+    transition: all 0.3s ease-out; }
+    .tabs__caption li.active {
+      background: url(../img/bgMainNav.jpg) repeat-x;
+      box-shadow: inset 1px 1px 1px #81de41;
+      border: 1px solid #0c932f;
+      position: relative; }
+      .tabs__caption li.active .tabTitle {
+        color: #fff;
+        text-shadow: 0 -2px rgba(0, 92, 19, 0.63); }
+        .tabs__caption li.active .tabTitle::before {
+          border: none; }
+    .tabs__caption li.active::after {
+      content: '';
+      position: absolute;
+      left: calc(50% - 4px);
+      bottom: -10px;
+      width: 0;
+      height: 0;
+      border: 4px solid transparent;
+      border-top: 6px solid #13961c; }
+    .tabs__caption li:first-child {
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px; }
+    .tabs__caption li:last-child {
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px; }
+
+.tabTitle {
+  display: inline;
+  font: 15px "ZurichCondensedBT", sans-serif;
+  color: #444137;
+  position: relative; }
+  .tabTitle::before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: calc(50% - 4px);
+    width: 0;
+    height: 0;
+    border: 4px solid transparent;
+    border-left: 6px solid #43ac2d; }
+
+.tabs__content {
+  display: none; }
+
+.tabs__content.active {
+  display: block; }
+
+.article {
+  width: 220px;
+  float: left;
+  margin: 0 21px 21px 0; }
+  .article:nth-of-type(3n) {
+    margin-right: 0; }
+  .article:nth-of-type(4n) {
+    clear: left; }
+  .article img {
+    border: 4px solid #e9e6df;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px; }
+
+.arcticleTitle {
+  font: bold 14px/20px Arial, sans-serif;
+  color: #3a3731;
+  margin-bottom: 10px; }
+
+.articleDesc {
+  font: 12px/18px Arial, sans-serif;
+  color: #3a3731; }

@@ -205,6 +205,7 @@ ol.bjqs-markers li.active-marker {
     cursor: pointer;
     padding: 8px 0;
     border: 1px solid #cfcdc5;
+    -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out; }
     .tabs__caption li.active {
       background: url(../img/bgMainNav.jpg) repeat-x;
@@ -219,6 +220,7 @@ ol.bjqs-markers li.active-marker {
     .tabs__caption li.active::after {
       content: '';
       position: absolute;
+      left: -webkit-calc(50% - 4px);
       left: calc(50% - 4px);
       bottom: -10px;
       width: 0;
@@ -241,6 +243,7 @@ ol.bjqs-markers li.active-marker {
     content: '';
     position: absolute;
     left: -8px;
+    top: -webkit-calc(50% - 4px);
     top: calc(50% - 4px);
     width: 0;
     height: 0;
@@ -329,15 +332,19 @@ ol.bjqs-markers li.active-marker {
   width: 22px;
   height: 19px;
   border-radius: 3px;
+  -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out; }
 
 .jq-selectbox__trigger-arrow {
+  top: -webkit-calc(50% - 2.5px);
   top: calc(50% - 2.5px);
+  right: -webkit-calc(50% - 4px);
   right: calc(50% - 4px);
   border-color: #fff transparent transparent transparent; }
 
 .jq-selectbox li {
   font: 11px Arial, sans-serif;
+  -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out; }
   .jq-selectbox li:hover {
     background: url(../img/bgMainNav.jpg) repeat-x 0 50%; }
@@ -480,6 +487,7 @@ ol.bjqs-markers li.active-marker {
 .contactsBodyDesc {
   font: 12px/18px Arial, sans-serif;
   color: #757268;
+  -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out; }
 
 a.contactsBodyDesc:hover {

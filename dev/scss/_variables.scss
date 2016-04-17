@@ -1,3 +1,6 @@
+
+
+
 $fontColorBlackLogo: #231f20; // цвет логотипа
 $fontColorGrayLogo:#858689; // цвет подписи логотипа
 $fontColorPTel: #585755; // цвет заголовка телефона
@@ -12,11 +15,19 @@ $fontColorArticle: #3a3731;
 $fontColorSliderWhite: #fff;
 $fontColorSliderGreen: #28b028;
 $fontColorAsideMain: #3f3b30;
+$fontColorSelectHover: #231f20;
+$fontColorContactsBodyTitle: #64522a;
+$fontColorContactsBodyDesc: #757268;
+$fontColorFooterCopy:#3a3731;
+$fontColorFoolerDesc:#716c61;
 
-$fontFamilyKlavika: Arial, sans-serif;
-$fontFamilyMyriad: 'Times', sans-serif;
-$fontFamilyZurichBT: 'Verdana', sans-serif;
+$fontFamilyKlavika: 'KlavikaMedium-Plain', sans-serif;
+$fontFamilyMyriad: 'MyriadProRegular', sans-serif;
+$fontFamilyMyriadSemibold: 'MyriadProSemibold', sans-serif;
+$fontFamilyZurichBT: 'ZurichCondensedBT', sans-serif;
+$fontFamilyZurichBTBold: 'ZurichBoldCondensedBT', sans-serif;
 $fontFamilyArial: Arial, sans-serif;
 
 
 $bgAside:#f4f2ec;
+$bgContactsBody:$bgAside;

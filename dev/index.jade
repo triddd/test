@@ -4,11 +4,14 @@ html(lang="en")
     meta(charset="utf-8")
     title NATURETOUR
     link(rel="stylesheet" href="css/reset.css")
-    link(rel="stylesheet" href="css/select2.min.css")
-   
-    link(rel="stylesheet" href="css/jquery.fs.selecter.min.css")
-    link(rel="stylesheet" type="text/css" href="css/bjqs.css")
+    link(rel="stylesheet" href="fonts/font.css")
+    link(rel="stylesheet" href="css/jquery.formstyler.css")
+    link(rel="stylesheet" href="css/bjqs.css")
     link(rel="stylesheet" href="css/main.css")
+
+    //[if lt IE 9]
+        script(src="js/classList.min.js")
+    //[endif]
   body
     .container
         // header
@@ -234,7 +237,7 @@ html(lang="en")
                     h3.asideTitle Holiday Search
                     p.asideDesc Start your holiday search here:
                     form
-                        select.js-example-basic-single
+                        select
                             option(value="1") Select Region
                             option(value="2") Africa
                             option(value="3") Antarctica 
@@ -243,6 +246,37 @@ html(lang="en")
                             option(value="6") Europe 
                             option(value="7") America
                         
+                        select
+                            option(value="1") Select Category
+                            option(value="2") 1st category
+                            option(value="3") 2nd stcategory
+                            option(value="4") 3rd category 
+                            option(value="5") 4th category
+                            
+                        
+                        select
+                            option(value="1") Select Date
+                            option(value="2") 06.16
+                            option(value="3") 07.16 
+                            option(value="4") 08.16 
+                            option(value="5") 09.16
+                            option(value="6") 10.16
+
+
+
+
+
+                        select
+                            option(value="1") Select Price
+                            option(value="2") 100-1000
+                            option(value="3") 1000-2000 
+                            option(value="4") 2000-3000 
+                            option(value="5") 3000-4000
+                            
+
+                        
+                            
+
                         button.asideButton.bigButton SEARCH HOLIDAYS
 
                     h3.asideTitle Quick Search
@@ -277,19 +311,77 @@ html(lang="en")
                                 br
                                 span 11/05/2010
                             p.asideNewsArticleDesc Experience the forest at night and watch Brown Bears – join one of our short breaks i...
+            // contacts
+            .contacts
+                .contactsHead
+                    h2.contactsHeadTitle. 
+                        Naturetour has 25 years experience in operating wildlife holidays.  Contact Us for friendly traval advice
+                .contactsBody
+                    .followUs
+                        h3.contactsBodyTitle.iconTwitted Follow us on twitter
+                        p.contactsBodyDesc.
+                            * 4 days ago The new website is now live. We hope you enjoy it and any feedback is welcome.
+                        button.contactsButton 
+                    .quickLinks
+                        h3.contactsBodyTitle Quick Links
+                        ul
+                            li
+                                a(href="#").contactsBodyDesc Holidays by destination
+                            li
+                                a(href="#").contactsBodyDesc Holidays by species
+                            li
+                                a(href="#").contactsBodyDesc Holidays by tour type
+                            li
+                                a(href="#").contactsBodyDesc Late availability
+                            li
+                                a(href="#").contactsBodyDesc Tour leaders
+                        ul   
+                            li
+                                a(href="#").contactsBodyDesc How to book
+                            li
+                                a(href="#").contactsBodyDesc FAQs
 
-                        
+                            li
+                                a(href="#").contactsBodyDesc Visit Us
+                            li
+                                a(href="#").contactsBodyDesc Terms & conditions
+                            li
+                                a(href="#").contactsBodyDesc Privacy Policy
+                        ul    
+                            li
+                                a(href="#").contactsBodyDesc Latest news
+                            li
+                                a(href="#").contactsBodyDesc Request a brochure
+                            li
+                                a(href="#").contactsBodyDesc Subscribe to newsletter
+                            li
+                                a(href="#").contactsBodyDesc Contact Us
 
-
-
-
-
-
-
+                    .contactUs
+                        h3.contactsBodyTitle Contact US
+                        ul
+                            li.contactsBodyDesc. 
+                                <b> Tel: </b>
+                                12345 67890
+                            li.contactsBodyDesc.
+                                <b> Email:</b>
+                                info@naturetour.com
+                            li.contactsBodyDesc.
+                                Naturetour, Your City,
+                                <br>
+                                Your state, 123 456 789
         
+
+        // footer
+        footer.footer
+            .footerCopy  &#169; Naturetour 2010.
+            p.footerDesc.
+                No portion of this website may be reproduced without the prior written consent of Naturetour. All rights reserved.
+
+   
  
-    script(src="https://code.jquery.com/jquery-1.12.3.min.js"   integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ="   crossorigin="anonymous")
+    script(src="js/jquery-2.2.3.min.js")
     script(src="js/tabs_localStorage.js")
     script(src="js/bjqs-1.3.min.js")
-    script(src="js/select2.min.js")
+    script(src="js/jquery.formstyler.min.js")
     script(src="js/main.js")

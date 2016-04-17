@@ -13,39 +13,3 @@ ol.bjqs-markers li a{display:inline-block;}
 p.bjqs-caption{display:block;width:96%;margin:0;padding:2%;position:absolute;bottom:0;}
 
 
-/* переопределенные стили */
-
-ol.bjqs-markers{
-	background: rgba(37,29,20,0.9);
-	position: absolute;
-	width: 235px;
-	top: 0;
-	right: 0;
-	height: 100%;
-	border-top-right-radius: 7px;
-	border-bottom-right-radius: 7px;
-	padding: 215px 16px 20px;
-	
-}
-ol.bjqs-markers li{
-	margin-right: 10px;
-	width: 22px;
-	height: 22px;
-	border-radius: 50%;
-	background:#6b685e;
-	text-align: center;
-	box-shadow: inset 0.5px -1px 1px rgba(192,186,166,0.75);
-	vertical-align: middle;
-	line-height: 22px;
-}
-ol.bjqs-markers li a{
-	color:#cbcbcb;
-	font: 12px Arial, sans-serif;
-}
-ol.bjqs-markers li.active-marker{
-	width: 26px;
-	height: 26px;
-	background:url(../img/bgMainNav.jpg) repeat-x;
-	box-shadow:none;
-	line-height: 26px;
-}

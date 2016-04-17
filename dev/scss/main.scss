@@ -1,310 +1,46 @@
 @import '_variables';
 
-
-
 body{
 	background:url(../img/bgBody.png) repeat;
 	a{
 		text-decoration: none;
 	}
 }
-
 .container{
 	width: 990px;
 	margin: auto;
+	min-height: 100vh;
+	position: relative;
+	padding-bottom: 106px;
 }
 
 
 // header begin
+@import 'header.scss';
 
-.header{
-	padding: 15px 0 10px;
-}
-.logo{
-
-	height: 65px;
-	background:url(../img/bgLogo.png) no-repeat 0 50%;
-	color: $fontColorBlackLogo;
-	font: 34px/20px $fontFamilyKlavika;
-	text-transform: uppercase;
-	float: left;
-	margin-left: 25px;
-	padding: 17px 0 0 30px;
-	span{
-		color: $fontColorGrayLogo;
-		font: 11px $fontFamilyMyriad;
-		text-shadow: 0.75px 1px rgba(255,255,255,0.78);
-	}
-}
-.tel{
-	width: 700px;
-	float: right;
-	text-align: right;
-	font: 12px $fontFamilyMyriad;
-	color:$fontColorPTel;
-	margin-bottom: 15px;
-	text-shadow: 0.75px 1px rgba(255,255,255,0.78);
-	
-	b{
-		font: 20px $fontFamilyMyriad;
-		color:$fontColorBTel;
-		text-shadow: none;
-	}
-	&::after{
-		content:' ';
-		display: table;
-		clear:both;
-	}
-}
-
-.siteNav{
-	float: right;
-	margin-bottom: 25px;
-	li{ 
-		float: left;
-		margin-right: 15px;
-		&:last-child{
-			margin-right: 0;
-		}
-		a{
-			font: 13px $fontFamilyZurichBT;
-			color:$fontColorNav;
-			text-transform: uppercase;
-		}
-	}
-	&::after{
-		content:'';
-		display: block;
-		clear:both;
-	}
-}
-
-.mainNav{
-	width: 100%;
-	display:table;
-	background:url(../img/bgMainNav.jpg) repeat-x;
-	box-shadow: inset 1px 1px 1px #81de41;
-	border: 1px solid #0c932f;
-	border-radius: 4px;
-	padding: 10px 0; 
-	margin-bottom: 15px;
-	ul{
-		display: table-row;
-	}
-	li{
-		display: table-cell;
-		text-align: center;
-		a{
-			font: bold 15px $fontFamilyMyriad;
-			color: #fff;
-			text-shadow: 0 -2px  rgba(0, 92, 19, 0.63);
-		}
-	}
-}
-
-.currentPage{
-	font:12px/20px $fontFamilyArial;
-	color: $fontColorCurrentPage;
-	text-transform: uppercase;
-	margin: 0 0 5px 25px;
-	text-shadow: 1px 1px  #fff;
-}
 
 // main 
-
+main{
+	//display: none; //проверка Футер прижат к низу страницы!!!
+}
 // content 
-
-.main{
-	border-radius: 4px;
-	border: 1px solid #e1dbce;
-	box-shadow: inset 0 0 1px #fff;
-}
-.content{
-	width: 741px;
-	height: 100%;
-	float: left;
-	background:#fff;
-	padding: 18px;
-	//border: 1px solid #e8e3da;
-
-	border-top-left-radius: 4px;
-	border-bottom-left-radius: 4px;
-}
-.sliderBlock{
-	position: relative;
-}
-
-.contentTitle{
-	font: 26px $fontFamilyZurichBT;
-	color:$fontColorContentTitle;
-	text-transform: uppercase;
-	max-width: 450px;
-	margin-bottom: 15px;
-}
-.contentDesc{
-	font: 12px/20px $fontFamilyArial;
-	color:$fontColorContentDesc;
-	max-width: 450px;
-	margin-bottom: 15px;
-	a{
-		text-decoration: underline;
-		color:$fontColorContentDescLink;
-	}
-}
-.contentImg{
-	position: absolute;
-	bottom: -15px;
-	right: 45px;
-}
-
-// slider styles
-#slider{
-	height: 265px;
-	margin-bottom: 25px;
-	position: relative;
-	ul{
-		border-radius: 7px;
-	}
-	img{
-		width: 200%
-	}
-	
-}
-.bjqsDesc{
-	width: 235px;
-	color:$fontColorSliderWhite;
-	position: absolute;
-	top: 0;
-	right: 0;
-	padding: 16px 16px;
-	z-index: 2;
-	h2{
-		font: 22px/35px $fontFamilyZurichBT;
-		margin-bottom: 10px;
-		em{
-			font: 32px/35px $fontFamilyZurichBT;
-			color:$fontColorSliderGreen;
-		} 
-	}
-	p{
-		font: 12px/18px $fontFamilyArial;
-	}
-	a{
-		font: 12px/18px $fontFamilyArial;
-		color: $fontColorSliderGreen;
-	}
-}
-// другие стили слайдера описаны в bjqs.css :)
-
-
-// tabs styles
-
-.tabs{
-	width: 100%;
-}
-.tabs__caption{
-	@extend .mainNav;
-	background:url(../img/bgTab.jpg) repeat-x ;
-	border:none;
-	box-shadow: inset 0 -1px 1px #fff;
-	padding: 0;
-	margin-bottom: 25px;
-
-	li{
-		float: left;
-		width: 33.3333%;
-		text-align: center;
-		cursor: pointer;
-		padding: 8px 0;
-		border:1px solid #cfcdc5;
-		&.active{
-			background:url(../img/bgMainNav.jpg) repeat-x;
-			box-shadow: inset 1px 1px 1px #81de41;
-			border: 1px solid #0c932f;
-			position: relative;
-
-			.tabTitle{
-				color:#fff;
-				text-shadow: 0 -2px  rgba(0, 92, 19, 0.63);
-				&::before{
-					border:none
-				}
-			}
-		}
-		&.active::after{
-			content: '';
-			position: absolute;
-			left:calc(50% - 4px);
-			bottom: -10px;
-			width: 0;
-			height: 0;
-			border:4px solid transparent;
-			border-top: 6px solid #13961c;
-			
-			}
-		
-		&:first-child{
-			border-top-left-radius: 4px;
-			border-bottom-left-radius: 4px;
-		}
-		&:last-child{
-			border-top-right-radius: 4px;
-			border-bottom-right-radius: 4px;
-		}
-	}
-}
-.tabTitle{
-	display: inline;
-	font: 15px $fontFamilyZurichBT;
-	color:$fontColorContentTitle;
-	position: relative;
-	&::before{
-		content: '';
-		position: absolute;
-		left: -8px;
-		top: calc(50% - 4px);
-		width: 0;
-		height: 0;
-		border:4px solid transparent;
-		border-left: 6px solid #43ac2d;
-	}
-
-}
-.tabs__content {
-  display: none; 
-}
-.tabs__content.active {
-  display: block; 
-}
-
-// article styles
-.article{
-	width: 220px;
-	float: left;
-	margin: 0 21px 21px 0;
-	&:nth-of-type(3n){
-		margin-right: 0;
-	}
-	&:nth-of-type(4n){
-		clear: left;
-	}
-	img{
-		border:4px solid #e9e6df;
-		border-radius: 5px;
-		width: 100%;
-		margin-bottom: 10px;
-	}
-
-}
-.arcticleTitle{
-	font:bold 14px/20px $fontFamilyArial;
-	color: $fontColorArticle;
-	margin-bottom: 10px;
-}
-.articleDesc{
-	font: 12px/18px $fontFamilyArial;
-	color: $fontColorArticle;
-	
-}
-
+@import 'content.scss';
 @import 'aside.scss';
+@import 'contacts.scss';
+
+
+.footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	padding: 0 0 70px 0;
+}
+.footerCopy{
+	font:bold 11px/18px $fontFamilyArial;
+	color:$fontColorFooterCopy;
+}
+.footerDesc{
+	font: 11px/18px $fontFamilyArial;
+	color:$fontColorFoolerDesc;
+}

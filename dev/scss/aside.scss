@@ -5,8 +5,11 @@
 	width: 247px;
 	background:$bgAside;
 	height: 100%;
+	border: 1px solid #e1dbce;
+	border-left: none;
 	border-bottom-right-radius: 4px;
 	border-top-right-radius: 4px;
+	margin-bottom: 20px;
 	section{
 		padding:20px;
 		border-bottom: 1px solid #e1dbce;
@@ -22,28 +25,77 @@
 	}
 }
 
-// forms styles
+// selects styles
 
-.select2-container--default .select2-selection--single .select2-selection__arrow{
-	width: 21px;
-	height: 19px;
-	background:#cacaca;
-	border-radius: 3px;
-	top:4px;
-	right: 4px;
-	b{
-		border-top-color: #fff;
+.jq-selectbox{
+	width: 100%;
+	margin-bottom: 18px;
+}
+.jq-selectbox__select{
+	@extend .asideForm;
+}
+.focused .jq-selectbox__select{
+	border-color: #cfcdc5;
+	.jq-selectbox__trigger{
+		background:#615b49;
+	}
+	.jq-selectbox__trigger-arrow{
+		border-color: #fff transparent transparent transparent;
 	}
 }
-.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b{
-	border-bottom-color: #fff;
+.jq-selectbox__select:hover,
+.jq-selectbox__select:focus{
+	@extend .asideForm;
+	.jq-selectbox__select-text{
+		color:$fontColorSelectHover;
+	}
+	.jq-selectbox__trigger{
+		background:#615b49;
+	}
+	.jq-selectbox__trigger-arrow{
+		border-color: #fff transparent transparent transparent;
+	}
 }
-.select2-selection .select2-selection--single:focus .select2-selection__arrow b{
-	background:#615b49;
+.jq-selectbox__select-text{
+	padding-top: 5px;
+}
+.jq-selectbox__trigger{
+	background:#cacaca;
+	margin: 2px;
+	width: 22px;
+	height: 19px;
+	border-radius: 3px;
+	transition: all 0.3s ease-out;
+}
+.jq-selectbox__trigger-arrow{
+	top:calc(50% - 2.5px);
+	right:calc(50% - 4px);
+	border-color: #fff transparent transparent transparent;
+}
+.jq-selectbox li{
+	font:11px $fontFamilyArial;
+	transition: all 0.3s ease-out;
+	&:hover{
+		background: url(../img/bgMainNav.jpg) repeat-x 0 50%;
+	}
+	.selected{
+		background: url(../img/bgMainNav.jpg) repeat-x 0 50%;
+	}
+	&:first-child{
+		border-top-left-radius: 3px;
+		border-top-right-radius: 3px;
+	}
+	&:last-child{
+		border-bottom-left-radius: 3px;
+		border-bottom-right-radius: 3px;
+	}
 }
 
 
 
+
+
+// form styles
 
 .asideSearch form:not(:last-of-type){
 	margin-bottom: 20px;
@@ -77,9 +129,9 @@
 	width: 67px;
 	box-shadow: 0 0 0 3px #d8d5cc, inset 1px 1px 1px #81de41;
 	border-color: #0c932f;
-	font:bold 14px $fontFamilyKlavika;
+	font: 14px $fontFamilyKlavika;
 	text-transform: uppercase;
-	letter-spacing:-1px;
+	letter-spacing:-0.7px;
 	color: $fontColorSliderWhite;
 	text-shadow: 0 -2px  rgba(0, 92, 19, 0.63);
 
@@ -96,10 +148,6 @@
 	padding-left:25px;
 
 }
-
-
-
-
 
 // text styles
 

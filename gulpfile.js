@@ -5,6 +5,7 @@ var gulp = require('gulp'),
 	jade = require('gulp-jade'),
 	browserSync = require('browser-sync').create(),
 	notify = require('gulp-notify'),
+  autoprefixer = require('gulp-autoprefixer'),
 	reload = browserSync.reload;
 
 // sass
@@ -15,6 +16,15 @@ gulp.task('sass', function () {
     .pipe(notify('Done SCSS'))
     .pipe(gulp.dest('./bild/css'));   
 });
+
+gulp.task('css', function () {
+  return gulp.src('bild/css/main.css')
+    .pipe(autoprefixer({
+      browsers: ['last 5 versions', 'ie 9', '> 1%'],
+    }))
+    .pipe(gulp.dest('bild/css/'));
+});
+
 
 // jade 
 
@@ -36,4 +46,4 @@ gulp.task('watch', function () {
 
 
 
-gulp.task('default', ['jade', 'sass', 'watch']);
+gulp.task('default', ['jade', 'sass','css', 'watch']);

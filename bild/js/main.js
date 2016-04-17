@@ -6,7 +6,7 @@ jQuery(document).ready(function($) {
 		'centermarkers' : false
 	});
 
-	$(".js-example-basic-single").select2();
+	$('select').styler();
 
 	
 

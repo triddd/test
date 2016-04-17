@@ -1,0 +1,101 @@
+@import '_variables.scss';
+
+
+.contacts{
+	clear: both;
+	margin-bottom:20px;
+
+}
+.contactsHead{
+	text-align: center;
+	border-bottom: 2px solid #635543;
+	background:url(../img/bgContastsHead.jpg) repeat-x;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+.contactsHeadTitle{
+	font: italic 16px/18px $fontFamilyArial;
+	color: $fontColorSliderWhite;
+	padding: 11px 0;
+	text-shadow: 0.5px 1px 1px rgba(0,0,0,0.75);
+}
+.contactsBody{
+	background:$bgContactsBody;
+	padding: 22px;
+	overflow: hidden;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+.contactsBodyTitle{
+	font: 14px/18px $fontFamilyKlavika;
+	color: $fontColorContactsBodyTitle;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+.iconTwitted{
+	background:url(../img/iconFollowUs.png) no-repeat 100% 50%;
+}
+.followUs{
+	float: left;
+	width: 225px;
+	padding-right: 30px;
+	border-right: 1px solid #d8d6ce;
+	.contactsBodyTitle{
+		padding-left: 5px;
+	}
+	.contactsBodyDesc{
+		margin-bottom: 10px;
+	}
+}
+.contactsBodyDesc{
+	font: 12px/18px $fontFamilyArial;
+	color: $fontColorContactsBodyDesc;
+	transition: all 0.3s ease-out;
+}
+a.contactsBodyDesc:hover{
+	color:darken($fontColorContactsBodyDesc, 40%);
+}
+.contactsButton{
+	background:none;
+	border:none;
+	background:url(../img/buttonFollowUs.png) no-repeat;
+	width: 195px;
+	height: 33px;
+}
+
+.quickLinks{
+	width: 515px;
+	padding: 0 25px;
+	float: left;
+	border-right: 1px solid #d8d6ce;
+	border-left: 1px solid #fff;
+	ul{
+		float: left;
+		&:first-of-type{
+			width: 169px;
+		}
+		&:nth-of-type(2){
+			width: 145px;
+		}
+		&:last-of-type{
+			width: 149px;
+		}		
+	}
+	a{
+		line-height: 20px;
+	}
+}
+
+
+
+.contactUs{
+	float: left;
+	padding-left: 25px;
+	border-left: 1px solid #fff;
+	li{
+		line-height: 20px;
+		&:nth-child(2){
+			margin-bottom: 20px;
+		}
+	}
+}

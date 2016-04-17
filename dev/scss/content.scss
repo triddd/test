@@ -1,0 +1,236 @@
+@import '_variables';
+
+
+
+.content{
+	width: 741px;
+	height: 100%;
+	float: left;
+	background:#fff;
+	padding: 18px 18px 0 18px;
+	border: 1px solid #e1dbce;
+
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	margin-bottom: 20px;
+}
+.sliderBlock{
+	position: relative;
+}
+
+.contentTitle{
+	font: 26px $fontFamilyZurichBT;
+	color:$fontColorContentTitle;
+	text-transform: uppercase;
+	max-width: 450px;
+	margin-bottom: 15px;
+}
+.contentDesc{
+	font: 12px/20px $fontFamilyArial;
+	color:$fontColorContentDesc;
+	max-width: 450px;
+	margin-bottom: 15px;
+	a{
+		text-decoration: underline;
+		color:$fontColorContentDescLink;
+	}
+}
+.contentImg{
+	position: absolute;
+	bottom: -15px;
+	right: 45px;
+}
+
+// slider styles
+#slider{
+	height: 265px;
+	margin-bottom: 25px;
+	position: relative;
+	ul{
+		border-radius: 7px;
+	}
+	img{
+		width: 200%
+	}
+	
+}
+.bjqsDesc{
+	width: 235px;
+	color:$fontColorSliderWhite;
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 16px 16px;
+	z-index: 2;
+	
+	h2{
+		font: 22px/35px $fontFamilyZurichBT;
+		margin-bottom: 10px;
+		em{
+			font: 32px/35px $fontFamilyZurichBT;
+			color:$fontColorSliderGreen;
+		} 
+	}
+	p{
+		font: 12px/18px $fontFamilyArial;
+	}
+	a{
+		font: 12px/18px $fontFamilyArial;
+		color: $fontColorSliderGreen;
+	}
+}
+
+/* переопределенные стили слайдера*/
+
+ol.bjqs-markers{
+	background: rgba(37,29,20,0.9);
+	position: absolute;
+	width: 235px;
+	top: 0;
+	right: 0;
+	height: 100%;
+	border-top-right-radius: 7px;
+	border-bottom-right-radius: 7px;
+	padding: 215px 16px 20px;
+	
+}
+ol.bjqs-markers li{
+	margin-right: 10px;
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	background:#6b685e;
+	text-align: center;
+	box-shadow: inset 0.5px -1px 1px rgba(192,186,166,0.75);
+	vertical-align: middle;
+	line-height: 22px;
+}
+ol.bjqs-markers li a{
+	color:#cbcbcb;
+	font: 12px Arial, sans-serif;
+	display: block;
+	height: 100%;
+	padding-top: 4px;
+}
+ol.bjqs-markers li.active-marker{
+	width: 26px;
+	height: 26px;
+	background:url(../img/bgMainNav.jpg) repeat-x;
+	box-shadow:none;
+	line-height: 26px;
+	padding-top: 2px;
+}
+
+
+// tabs styles
+
+.tabs{
+	width: 100%;
+	
+}
+.tabs__caption{
+	@extend .mainNav;
+	background:url(../img/bgTab.jpg) repeat-x ;
+	border:none;
+	box-shadow: inset 0 -1px 1px #fff;
+	padding: 0;
+	margin-bottom: 25px;
+
+
+	li{
+		float: left;
+		width: 33.3333%;
+		text-align: center;
+		cursor: pointer;
+		padding: 8px 0;
+		border:1px solid #cfcdc5;
+		transition: all 0.3s ease-out;
+		&.active{
+			background:url(../img/bgMainNav.jpg) repeat-x;
+			box-shadow: inset 1px 1px 1px #81de41;
+			border: 1px solid #0c932f;
+			position: relative;
+
+			.tabTitle{
+				color:#fff;
+				text-shadow: 0 -2px  rgba(0, 92, 19, 0.63);
+				&::before{
+					border:none
+				}
+			}
+		}
+		&.active::after{
+			content: '';
+			position: absolute;
+			left:calc(50% - 4px);
+			bottom: -10px;
+			width: 0;
+			height: 0;
+			border:4px solid transparent;
+			border-top: 6px solid #13961c;
+			
+			}
+		
+		&:first-child{
+			border-top-left-radius: 4px;
+			border-bottom-left-radius: 4px;
+		}
+		&:last-child{
+			border-top-right-radius: 4px;
+			border-bottom-right-radius: 4px;
+		}
+	}
+}
+.tabTitle{
+	display: inline;
+	font: 15px $fontFamilyZurichBT;
+	color:$fontColorContentTitle;
+	position: relative;
+	&::before{
+		content: '';
+		position: absolute;
+		left: -8px;
+		top: calc(50% - 4px);
+		width: 0;
+		height: 0;
+		border:4px solid transparent;
+		border-left: 6px solid #43ac2d;
+	}
+
+}
+.tabs__content {
+  display: none; 
+}
+.tabs__content.active {
+  display: block; 
+}
+
+// article styles
+.article{
+	width: 220px;
+	float: left;
+	margin: 0 21px 21px 0;
+	&:nth-of-type(3n){
+		margin-right: 0;
+	}
+	&:nth-of-type(4n){
+		clear: left;
+	}
+	img{
+		border:4px solid #e9e6df;
+		border-radius: 5px;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+}
+.arcticleTitle{
+	font:bold 14px/20px $fontFamilyArial;
+	color: $fontColorArticle;
+	margin-bottom: 10px;
+}
+.articleDesc{
+	font: 12px/18px $fontFamilyArial;
+	color: $fontColorArticle;
+	
+}
